@@ -18,11 +18,17 @@
     width: 100%;
     padding: 3rem 0;
 }
+.post-content h1 {
+    padding: 3rem 0 1rem 0;
+}
 .post-content h2 {
-    padding: 2rem 0 0.5rem 0;
+    padding: 1rem 0 0.5rem 0;
 }
 .post-content p {
     text-indent: 2.5rem;
+}
+.post-content li {
+    list-style: circle;
 }
 .ref-post {
     padding: 4rem 0.5rem;
