@@ -1,0 +1,188 @@
+@media only screen and (max-width: 1260px){
+    #main-content {
+        flex-direction: column;
+    }
+    #right-zone {
+        width: 100%;
+        height: 1050px;
+    }
+    .side-card img {
+        width: 30%;
+        height: 200px;
+    }
+    #btn-all-blogs {
+        width: 500px;
+        background-color: var(--main-color);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #banner {
+        height: 100%;
+        padding: 5rem 0;
+        flex-direction: column;
+    }
+    #text-banner{
+        text-align: center;
+    }
+    .in-home-page{
+        grid-template-columns: repeat(1,auto);
+        justify-items: center;
+        grid-gap: 3rem;
+    }
+    .card {
+        padding-bottom: 1rem;
+        border-bottom: 3px solid var(--main-color);
+        width: 90%;
+    }
+    .card img{
+        width: 100%;
+        height: 380px;
+    }
+    #info-team{
+        margin-top: 12rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #caption-team{
+        padding: 4rem 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+    #caption-team figcaption {
+        margin-top: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+    #info-team{
+        margin-top: 2rem;
+    }
+    .about-member {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-member figcaption {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 675px) {
+    #navbar {
+        justify-content: space-between;
+    }
+    #navbar ul {
+        position: fixed;
+        top: 62px;
+        left: -100%;
+        background-color: #fff;
+        /* border: 3px solid var(--main-color); */
+        height: 100vh;
+        width: 100%;
+        display: block;
+        transition: all 0.4s ease-out;
+        /* border-left: 3px solid var(--main-color);
+        border-right: 3px solid var(--main-color); */
+    }
+    #click:checked ~ ul {
+        left: 0;
+    }
+    #navbar li {
+        font-size: 20px;
+        text-align: center;
+        padding: 2rem 0;
+        margin: auto;
+        width: 20%;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+@media only screen and (max-width: 414px) {
+    #navbar {
+        width: 100%;
+    }
+
+    #navbar li {
+        /* font-size: 18px; */
+        width: 30%;
+    }
+    #logo a {
+        padding:  0;
+    }
+    #logo img {
+        width: 140px;
+    }
+    #banner img{
+        width: 100%;
+    }
+    #text-banner h1{
+        font-size: 64px;
+    }
+    #p-in-banner {
+        font-size: 18px;
+    }
+    #right-zone{
+        height: 950px;
+    }
+    #side-blogs img{
+        height: 150px;
+        width: 150px;
+    }
+    #btn-all-blogs {
+        width: 40%;
+    }
+
+    footer {
+        padding: 1rem 0.5rem;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    .ref-post h2 {
+        margin-bottom: 1rem;
+    }
+    .ref-post li{
+        font-size: 14px;
+    }
+    .tag-post{
+        flex-direction: column;
+    }
+    .about-post {
+        margin: 0.5rem 0;
+        justify-content: flex-start;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #navbar ul a {
+        font-size: 18px;
+    }
+    #p-in-banner {
+        font-size: 16px;
+        line-height: 2;
+    }
+    .head {
+        font-size: 20px;
+    }
+    .zone1 {
+        width: 65%;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+    #right-zone{
+        height: 980px;
+    }
+    #btn-all-blogs {
+        width: 60%;
+    }
+
+    .about-member img {
+        width: 280px;
+    }
+    .about-member h1 {
+        font-size: 30px;
+    }
+}
