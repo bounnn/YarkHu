@@ -1,0 +1,63 @@
+/* menu hover  */
+#navbar a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.2em;
+	background-color: var(--main-color);
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+#navbar li a {
+    overflow: hidden;
+}
+#navbar li a::after {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+}
+#navbar li a:hover::after,
+#navbar li a:focus::after{
+    transform: translate3d(0, 0, 0);
+}
+
+/* burger menu  */
+#click {
+    display: none;
+}
+
+/* color current page  */
+.current-page a{
+	color: var(--main-color);
+}
+
+/* icon */
+.fab {
+    /* border: 3px solid var(--main-color);  */
+    margin: 0 0.2rem;
+    font-size: 60px;
+    color: var(--main-color);
+}
+.fab:hover {
+    color: var(--main-color-hover);
+}
+
+.fas {
+    padding: 0.6rem;
+    background-color: var(--main-color);
+    /* margin: 0 0.2rem; */
+    font-size: 18px;
+    color: var(--main-text-color);
+}
+
+.material-icons-outlined {
+    font-size: 40px;
+    color: var(--main-color);
+    padding: 1rem;
+}
+
+/* font English */
+.font-robo {
+    font-family: var(--eng-font);
+}

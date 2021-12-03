@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YARK HU</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/asset.css" />
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/response.css">
+    <script src="https://kit.fontawesome.com/26b0666b7b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <a href="../../index.html"
+          ><img id="logo-img" src="../logo/darkblue.png" alt=""
+        /></a>
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <span class="material-icons-outlined"> menu </span>
+      </label>
+      <ul>
+        <li><a href="../../index.html">ໜ້າຫຼັກ</a></li>
+        <li class="current-page"><a href="../pages/blogs.html">ບົດຄວາມ</a></li>
+        <li><a href="../pages/about.html">ກ່ຽວກັບ</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+        <section id="main-post">
+            <h1 class="head-post"><span class="font-robo"><b>Javascript ES6</b></span> ມັນແມ່ນຫຍັງ? ຄວນສຶກສາ ຫຼື ບໍ່? ບົດຄວາມນີ້ມີຄຳຕອບ</h1>
+            <div class="body-post">
+                <img src="../image/Post Pic/js.png" alt="">
+                <div class="post-content">
+                    <p>ກ່ອນທີ່ຈະເຂົ້າເນື້ອໃນເຮົາມາທຳຄວາມຮູ້ຈັກກັບ ECMAScript ກ່ອນເພື່ອຄວາມເຂົ້າໃຈທີ່ຫຼາຍຂຶ້ນ.</p>
+                    <p>ECMAScript ແມ່ນພາສາ script ທີ່ເປັນມາດຕະຖານຂອງ Javascript ເຊິ່ງຈະມີຫຼາຍໆ version ໂດຍແຕ່ລະ version ຈະເພີ່ມຄວາມສາມາດຫຼືແກ້ໄຂຂໍ້ຜິດພາດຂອງ version ກ່ອນໆ ເຊິ່ງ version ທີ່ມີການປ່ຽນແປງຫຼາຍທີ່ສຸດກໍແມ່ນ ES6 ແລະ ເປັນ version ທີ່ຄວນສຶກສາໄວ້ຫຼາຍທີ່ສຸດ. ໂດຍໃນປະຈຸບັນໄດ້ມີການປ່ອຍ ES12 ອອກມາແລ້ວ.</p>
+                    <p>ES6 ຫຼືທີ່ຮູ້ຈັກກັນໃນນາມ ECMAScript 2015 ນັ້ນແມ່ນຮູບແບບການຂຽນ Javascript ໃຫ້ມີຄວາມທັນສະໄໝຂຶ້ນ ມີຄວາມອ່ານງ່າຍ ແລະ ຂຽນໄດ້ສັ້ນລົງ ໂດຍ version ນີ້ໄດ້ເພີ່ມ feature ໃໝ່ ແລະ ແຕກຕ່າງຈາກແບບເກົ່າດັ່ງນີ້:</p>
+                    
+                    <h2>1.	ການປະກາດຕົວປ່ຽນດ້ວຍ let, var ແລະ const</h2>
+                    <p>ໃນແບບເກົ່າເວລາເຮົາປະກາດຕົວປ່ຽນ ເຮົາມັກຈະໃຊ້ var ແຕ່ພໍມາໃນ ES6 ຈະນິຍົມໃຊ້ let ແລະ const ແທນ.</p>
+                    <p>Keyword let ແຕກຕ່າງກັບ var ຢູ່ບ່ອນທີ່ let ບໍ່ສາມາດປະກາດຕົວປ່ຽນທີ່ປະກາດໄປແລ້ວຄືນໄດ້ຄືກັບ var ນີ້ກໍເພື່ອຫຼຸດຄວາມຜິດພາດຈາກການທີ່ປະກາດຕົວປ່ຽນຊ້ຳໂດຍບໍ່ໄດ້ຕັ້ງໃຈ. ເມື່ອມີການປະກາດຊ້ຳຈະຂຶ້ນ error.</p>
+                    <img src="../image/Content/1.png" alt="">
+                    <p>ສ່ວນ keyword const ຈະໃຊ້ເວລາປະກາດຕົວປ່ຽນແບບຄົງຄ່າ (ບໍ່ສາມາດປ່ຽນແປງຄ່າໄດ້)</p>
+                    <img src="../image/Content/2.png" alt="">
+                    
+                    <h2>2.	Arrow Function</h2>
+                    <p>Arrow Function ເປັນຮູບແບບການປະກາດ function ຫັ້ນລະ ແຕ່ຈະຂຽນໂຄດໄດ້ສັ້ນລົງ ແລະ ມີຄວາມເທ່. ໂດຍການປະກາດບໍ່ຈຳເປັນຕ້ອງມີຄຳວ່າ function (ຖ້າເປັນ single statement ບໍ່ຖ້າມີ keyword return ແລະ ເຄື່ອງໝາຍ {} ກໍໄດ້).</p>
+                    <img src="../image/Content/3.png" alt="">
+                    <h2>3.	Template literal (`)</h2>
+                    <p>ໃນເວລາທີ່ເຮົາຕ້ອງການຕໍ່ຄຳ ຫຼື ປະໂຫຍກ ປົກກະຕິແລ້ວເຮົາມັກຈະໃຊ້ເຄື່ອງບວກ (+) ໃນການຕໍ່ ຫຼື ເຊື່ອມເຂົ້າດ້ວຍກັນ. ແຕ່ມາໃນ ES6 ສາມາດໃຊ້ເຄື່ອງໝາຍ backtick ( ` ) ແທນໄດ້ດັ່ງຕົວຢ່າງຂ້າງລຸ່ມນີ້</p>
+                    <img src="../image/Content/4.png" alt="">
+                    <p><b>ແນະນຳ: </b>`${variable}` ເປັນການດຶງເອົາຄ່າທີ່ຢູ່ໃນຕົວແປນັ້ນມາສະແດງ.</p>
+                    
+                    <h2>4.	Default Parameters</h2>
+                    <p>Default Parameters ແມ່ນການທີ່ເຮົາຕັ້ງຄ່າເລີ່ມຕົ້ນໃຫ້ແກ່ parameter. ເມື່ອບໍ່ມີການຮັບຄ່າໃໝ່ເຂົ້າມາ ມັນຈະສະແດງຄ່າເລີ່ມຕົ້ນນັ້ນແທນ.</p>
+                    <img src="../image/Content/5.png" alt="">
+                    <p>ໃນບັນທັດທີ່ 5 ບໍ່ມີການປ້ອນຄ່າໃໝ່ໃຫ້ແກ່ greeting ດັ່ງນັ້ນຄ່າທີ່ອອກມາຈະໄດ້ ‘Hello’ ຕາມທີ່ໄດ້ຕັ້ງຄ່າໄວ້. ສ່ວນໃນບັນທັດທີ່ 8 ໄດ້ມີການປ້ອນຄ່າໃໝ່ໃຫ້ແກ່ greeting ດັ່ງນັ້ນຄ່າທີ່ອອກມາກໍຈະເປັຮຄ່າທີ່ປ້ອນເຂົ້າໄປໃໝ່ ນັ້ນກໍຄື ‘Welcome’.</p>
+                    
+                    <h2>5.	Destructuring</h2>
+                    <p>ໃນ ES5 ຫຼື versionເກົ່າ ເວລາທີ່ເຮົາຕ້ອງການດຶງເອົາຄ່າໃນ Array ຫຼື Object ເຮົາຕ້ອງໄດ້ສ້າງຕົວແປມາຮັບເທື່ອລະຕົວ ແຕ່ພໍມາໃນ ES6 ເຮົາສາມາດດຶງເອົາຄ່າອອກມາໄວ້ໃນຕົວແປໄດ້ເລີຍ</p>
+                    <img src="../image/Content/6.png" alt="">
+                    <p>ໃນ ES5 ນັ້ນເວລາທີ່ເຮົາຕ້ອງການນຳເອົາຄ່າໃຫ້ກັບ Array ຫຼື Object ເຮົາຕ້ອງໄດ້ສ້າງຕົວປ່ຽນມາເກັບເທື່ອລະຕົວ (ບັນທັດທີ່ 11-16). ແຕ່ພໍເປັນ ES6 ເຮົາສາມາດເຮັດຄືກັບບັນທັດທີ່ 18-22 ໄດ້ເລີຍ.</p>
+                    
+                    <h2>6.	Rest  Operator (…)</h2>
+                    <p>Rest operator ຫຼື Spread operator ໃຊ້ເພື່ອກະຈາຍຂໍ້ມູນທີ່ຢູ່ໃນ Array ໄດ້ .</p>
+                    <img src="../image/Content/7.png" alt="">
+                    <p>ນອກຈາກີ້ຍັງສາມາດນຳໄປປະຍຸກໃຊ້ກັບ function ໄດ້ແບບນີ້.</p>
+                    <img src="../image/Content/8.png" alt="">
+                    <p><b>ຂໍ້ຄວນລະວັງ: </b>ເມື່ອເຮົາໃຊ້ Rest operator ກັບ parameter ຄ່າທີ່ໄດ້ຈະເປັນຊະນິດຂໍ້ມູນຂອງ Array.</p>
+                    <img src="../image/Content/9.png" alt="">
+
+                </div>
+                <div class="ref-post">
+                    <h2>ອ້າງອີງ</h2>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/default.asp" target="_blank">https://www.w3schools.com/default.asp</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=cSfj00AiXQ4&t=761s " target="_blank">Youtube Patiphan Phengpao</a></li>
+                    </ul>
+                </div>
+                <div class="horizon-line"></div>
+                <div class="tag-post">
+                    <div class="about-post">
+                        <div class="icon-post"><i class="fas fa-user"></i></div>
+                        <h2>ບຸນ</h2>
+                    </div>
+                    <div class="about-post">
+                        <div class="icon-post"><i class="fas fa-folder"></i></div>
+                        <h2>ພາສາໂປຣແກຣມ</h2>
+                    </div>
+                    <div class="about-post">
+                        <div class="icon-post"><i class="fas fa-clock"></i></div>
+                        <h2>29/11/2021</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blogs-zone">
+            <h1 class="head zone1">ບົດຄວາມອື່ນໆ</h1>
+            <div class="blog-list in-blog-page">
+              <a href="../posts/HTML.html" target="_blank" class="card">
+                <img src="../image/Post Pic/html (2).png" alt="" />
+                <h2><span class="font-robo">HTML</span></h2>
+                <div class="catergory">
+                  <h3>ເວັບ</h3>
+                </div>
+              </a>
+  
+              <a href="../posts/3DPrint.html" target="_blank" class="card">
+                <img src="../image/Post Pic/3d.png" alt="" />
+                <h2>ເຄື່ອງພິມ 3ມິຕິ</h2>
+                <div class="catergory">
+                  <h3>ເທັກໂນໂລຢີ</h3>
+                </div>
+              </a>
+  
+              <a href="../posts/SmartContact.html" target="_blank" class="card">
+                <img src="../image/Post Pic/smartContact (2).png" alt="" />
+                <h2><span class="font-robo">Smart Contact</span></h2>
+                <div class="catergory">
+                  <h3>ເທັກໂນໂລຢີ</h3>
+                </div>
+              </a>
+              <a href="../posts/JAVA.html" target="_blank" class="card">
+                <img src="../image/Post Pic/java.png" alt="" />
+                <h2><span class="font-robo">JAVA</span></h2>
+                <div class="catergory">
+                  <h3>ພາສາໂປຣແກຣມ</h3>
+                </div>
+              </a>
+            </div>
+        </section>
+    </div>
+    <footer>
+      <div id="logo">
+        <a href="../../index.html"><img src="../logo/white.png" alt="" /></a>
+      </div>
+      <p class="font-robo">copyright 2021 by YARK HU</p>
+    </footer>
+  </body>
+</html>

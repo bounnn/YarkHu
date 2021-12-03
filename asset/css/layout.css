@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+/* navbar */
+#navbar {
+    max-height: 65px;
+    width: 100%;
+    height: 100%;
+}
+#logo img {
+    width: 180px;
+}
+
+/* banner */
+#banner {
+    height: 100vh;
+}
+#banner img{
+    width: 525px;
+}
+
+/* main content  */
+#main-content{
+    width: 100%;
+    height: 100%;
+}
+#right-zone {
+    width: 23%;
+    height: 800px;
+}
+
+/* blogs page  */
+.blogs-zone {
+    margin-bottom: 100px;
+}
+.blog-list {
+    width: 100%;
+}
+.in-home-page{
+    grid-gap: 15px;
+    grid-template-columns: repeat(3,auto);
+}
+.card {
+    
+    width: 315px;
+}
+.card img {
+    width: 315px;
+    height: 228px;
+}
+
+.side-card img {
+    width: 112px;
+    height: 112px;
+}
+#btn-all-blogs {
+    width: 240px;
+}
+
+
+/* blogs page  */
+.in-blog-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3.5rem 0.5rem;
+}
+
+/* about page  */
+#blogs-page{
+    width: 100%;
+    height: 100%;
+}
+#caption-team {
+    height: 300px;
+}
+#caption-team img {
+    width: 350px;
+    height: 70px;
+}
+#caption-team figcaption {
+    height: 100%;
+    width: 40%;
+}
+.about-member img {
+    width: 345px;
+    height: 345px;
+    object-fit: cover;
+}
+.about-member figcaption{
+    width: 40% ;
+}
