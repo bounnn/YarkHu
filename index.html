@@ -19,6 +19,22 @@
     ></script>
   </head>
   <body>
+    <script>
+      function darkMode() {
+        document.body.classList.toggle("darktheme");
+      }
+
+      var toggleImg = true;
+      function changeImg() {
+        let img = document.getElementById("logo-img").src;
+        if (toggleImg === true) {
+          document.getElementById("logo-img").src = "./asset/logo/white.png";
+        } else {
+          document.getElementById("logo-img").src = "./asset/logo/darkblue.png";
+        }
+        toggleImg = !toggleImg;
+      }
+    </script>
     <nav id="navbar">
       <div id="logo">
         <a href="./index.html"
@@ -34,6 +50,13 @@
         <li><a href="./asset/pages/blogs.html">ບົດຄວາມ</a></li>
         <li><a href="./asset/pages/about.html">ກ່ຽວກັບ</a></li>
       </ul>
+      <span
+        id="mode"
+        class="material-icons-outlined"
+        onclick="darkMode();changeImg()"
+      >
+        brightness_medium
+      </span>
     </nav>
 
     <section id="banner">
