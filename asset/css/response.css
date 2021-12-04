@@ -153,6 +153,12 @@
         margin: 0.5rem 0;
         justify-content: flex-start;
     }
+    .menu-btn {
+        margin-left: 75px;
+    }
+    #mode {
+        font-size: 26px;
+    }
 }
 @media only screen and (max-width: 375px) {
     #navbar ul a {
@@ -184,5 +190,11 @@
     }
     .about-member h1 {
         font-size: 30px;
+    }
+    .menu-btn {
+        margin-left: 45px;
+    }
+    #mode {
+        font-size: 24px;
     }
 }
