@@ -9,8 +9,15 @@
     --category-text-color: #FF3C8E;
     --eng-font: 'Roboto', sans-serif;
     --lao-font:'Noto Sans Lao', sans-serif;
-  }
+}
 
+.darktheme{
+    --main-bg-color: #1F2633;
+    --main-text-color : #fff;
+    --second-text-color : #1F2633;
+    --second-color : #fff;
+    transition: all 0.4s ease-out;
+}
 h1 {
     font-size: 28px;
 }
@@ -26,14 +33,14 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--second-color);
+    color: var(--main-text-color);
 }
 html {
     line-height: 1.75;
 }
 body {
     background-color: var(--main-bg-color);
-    color: var(--second-color);
+    color: var(--main-text-color);
     font-family: var(--lao-font);
 }
 /* navbar */
@@ -85,7 +92,7 @@ body {
 #p-in-banner {
     font-size: 30px;
     line-height: 4rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 /* end banner */
 
@@ -94,7 +101,7 @@ body {
     padding: 85px 27px 0 27px;
     display: flex;
     justify-content: space-between;
-    color: var(--second-color);
+    color: var(--main-text-color);
 }
     /* head */
 .head {
